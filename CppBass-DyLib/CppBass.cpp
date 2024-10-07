@@ -2,6 +2,7 @@
 
 int main() {
 	LPCWSTR stringexample = (LPCWSTR)"ExampleBass.mp3";
+	SetConsoleTitleA("CppBass-DylibEdition by RiritoXXL");
 	BASS_INIT();
 	BASS_Start();
 	uint32_t handle_bass = BASS_StreamCreateFile(stringexample);
