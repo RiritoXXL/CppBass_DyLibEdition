@@ -1,7 +1,7 @@
 #include "includes.h"
 
 int main() {
-	LPCWSTR stringexample = (LPCWSTR)"ExampleBass.mp3";
+	LPCSTR stringexample = (LPCSTR)"ExampleBass.mp3";
 	SetConsoleTitleA("CppBass-DylibEdition by RiritoXXL");
 	BASS_INIT();
 	BASS_Start();
