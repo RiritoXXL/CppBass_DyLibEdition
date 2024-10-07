@@ -30,9 +30,9 @@ void BASS_Start() {
 	}
 }
 
-uint32_t BASS_StreamCreateFile(LPCWSTR str) {
+uint32_t BASS_StreamCreateFile(LPCWSTR str, int flag) {
 	auto BASS_StreamCreateFile = GetDLL().get_function<uint32_t(bool, LPCWSTR, int, int, int)>("BASS_StreamCreateFile");
-	return BASS_StreamCreateFile(false, str, 0, 0, BASS_LOOP);
+	return BASS_StreamCreateFile(false, str, 0, 0, flag);
 }
 
 void BASS_ChannelPlay(uint32_t handle) 
